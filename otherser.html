@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Services | ArtoSpace</title>
+</head>
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.page-header {
+  text-align: center;
+  background: cadetblue;
+  color: #111;
+  padding: 80px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #333;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 70px 100px;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 40px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color:cadetblue;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:cadetblue;
+  color: #111;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 35px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 10%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 30px auto; /* centers horizontally */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+  background-color: transparent;
+  color: cadetblue;
+  border: 3px solid cadetblue;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 992px) {
+  .services-list {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px 50px;
+  }
+  a{
+    width: 20%;
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-list {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+  a{
+    width: 20%;
+    padding-left: 6%;
+  }
+ 
+}
+
+</style>
+<body>
+  <header class="page-header">
+    <h1>Our Other Services</h1>
+    <p>From space planning to custom furniture explore everything ArtoSpace has to offer.</p>
+  </header>
+
+  <section class="services-list">
+    <div class="service-item">
+      <h3>🪑 Custom Furniture</h3>
+      <p>Handcrafted pieces that fit your space and personality.</p>
+    </div>
+    <div class="service-item">
+      <h3>🛠️ Renovation</h3>
+      <p>Transform your old spaces into modern masterpieces.</p>
+    </div>
+    <div class="service-item">
+      <h3>📐 Space Planning</h3>
+      <p>Smart layouts that maximize functionality and flow.</p>
+    </div>
+  </section>
+<a href="./contact-us.html">contact us</a></body>
+</html>

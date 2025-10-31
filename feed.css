@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* prevents horizontal scroll */
+}
+
+
+/* nav */
+
+
+.navbar {
+    background-color: #565656;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar.scrolled {
+    background-color: #565656;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand::first-letter {
+    color: #f0c040;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+    font-weight: 700px !important;
+}
+
+.navbar .nav-link:hover {
+    color: #f0c040 !important;
+}
+
+.feed h1 {
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+}
+
+span {
+    color: #f0c040;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.411)),
+        url('./feed.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.head h1 {
+    margin-top: 12%;
+    color: #fff;
+    text-align: center;
+}
+
+span {
+    color: #f0c040;
+}
+
+.form-box {
+    flex: 1;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+form label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    background: transparent;
+    color: #fff;
+    width: 79%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: transparent;
+    color: #f0c040;
+    padding: 10px 20px;
+    border: 2px solid #f0c040;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.error {
+    color: #f0c040;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form-box {
+    padding-left: 19%;
+}
+
+.footer {
+    padding: 5% 1%;
+    display: flex;
+    justify-content: center;
+    background-color: #565656;
+    color: #fff;
+}
+
+.f_box {
+    flex-basis: 21%;
+}
+
+.f_box li {
+    list-style: none;
+    padding: 7px 0;
+    color: #fff;
+}
+
+.f_box h2 {
+    color: #f0c040;
+    padding-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    background-color: #313030;
+    color: white;
+    columns: #fff;
+    padding: 10px 0;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    color: #f0c040;
+}
+
+.icons i:hover {
+    color: #ffffff;
+    transition: 0.2s ease;
+}
+
+.send h5 {
+    color: #f0c040;
+}
+
+.send input {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 8px 0;
+    width: 200px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+
+.send button {
+    border: 2px solid #f0c040;
+    border-radius: 6px;
+    color: #f0c040;
+    background-color: transparent;
+    width: 90px;
+
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: #565656 !important;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        color: #f0c040 !important;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: white !important;
+    }
+
+    .navbar-brand {
+        font-size: 20px !important;
+    }
+
+    .f_box h1 {
+        font-size: 20px !important;
+    }
+
+    .f_box h2,
+    h5 {
+        font-size: 20px;
+    }
+
+    .f_box li {
+        font-size: 11px;
+    }
+
+    .icons {
+        size: 13px;
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .heading img {
+        width: 90%;
+        height: 580px !important;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+        top: 36%;
+    }
+
+    .heading p {
+        font-size: 14px;
+        top: 50%;
+    }
+
+    .heading button {
+        font-size: 12px;
+        top: 64%;
+        padding: 10px 10px;
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        .navbar-nav .nav-link {
+            font-size: 11px;
+        }
+
+        .head h1 {
+            margin-top: 17%;
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 22px;
+        }
+
+        .form-box button {
+            font-size: 13px;
+            width: 40%;
+            height: auto;
+        }
+
+        form label {
+            font-size: 15px;
+        }
+
+        .footer {
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+
+        .send {
+            display: none;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+    }
+
+}
