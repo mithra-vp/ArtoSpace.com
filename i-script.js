@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
       try { carousel.cycle(); } catch (e) { }
-    }, 200);
+    }, 2000);
   });
 });
 
